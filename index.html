@@ -8,11 +8,16 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    
+    <!-- container vue -->
     <div id="app">
-        <h1>{{variabile}}</h1>
-        <img :src="img">
+        <label for="user">digita qui il tuo nome</label>
+        <input id="user" type="text" v-model="inputUser">
+        <button @click="userHello"> INVIO </button>
+        <h1>{{userName}}</h1>   <!-- dynimic text with mustache-->
+        <img :src="img">   <!-- dynimic class-->
     </div>
+    <!-- /container vue -->
+
 
     <!-- script -->
     <script src="./js/script.js"></script>
